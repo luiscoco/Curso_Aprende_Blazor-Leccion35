@@ -43,5 +43,16 @@
  </div>
 ```
 
-5. Como resultado obtenemos el mensaje: Hello, John!
+5. Como resultado obtenemos el mensaje:
+
+https://localhost:7111/queryparameter?name1=John
+```
+Hello, John
+```
+
+https://localhost:7111/queryparameter?name1=John&name2=Lucas
+```
+Hello, John Lucas
+```
+
  
