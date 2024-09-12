@@ -1,0 +1,16 @@
+﻿@page "/queryparameter"
+
+@* https://localhost:7111/queryparameter?name1=John *@
+@* https://localhost:7111/queryparameter?name1=John&name2=Lucas *@
+
+<h3>Hello, @Name1 @Name2</h3>
+
+@code {
+    [Parameter]
+    [SupplyParameterFromQuery(Name = "name1")]
+    public string Name1 { get; set; } = "Unknown";
+
+    [Parameter]
+    [SupplyParameterFromQuery(Name = "name2")]
+    public string Name2 { get; set; } = "Unknown";
+}
